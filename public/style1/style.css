@@ -1,0 +1,229 @@
+     header {
+         background-color: gray;
+         padding-left: 20px;
+         padding-top: 4%;
+         padding-bottom: 6%;
+         margin-bottom: 4%;
+     }
+
+     h3 {
+        border-bottom: 1px solid darkgray;
+        font-family: sans-serif;
+        padding-bottom: 10px;
+        margin-bottom: 2%;
+    }
+
+    h3::before {
+        content: "";
+        width: 17px;
+        height: 17px;
+        background-color: red;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    .skills-primary>.skill {
+        background-color: gray;
+        margin: 3px;
+        padding: 5px;
+    }
+    .skills-secondary>.skill {
+        background-color: lightgray;
+        margin: 3px;
+        padding: 5px;
+    }
+    .skills-secondary div {
+        opacity: 0.8;
+    }
+    .skill span {
+        background-color: red;
+        display: block;
+        color: white;
+    }
+    .skills-primary [data-skill="5"] span {
+        width: 50%;
+        background-color: red;
+        padding: 4px 12px;
+    }
+    .skills-primary [data-skill="3"] span {
+        width: 30%;
+        background-color: red;
+        padding: 4px 12px;
+    }
+    .skills-primary [data-skill="1"] span {
+        width: 6%;
+        background-color: red;
+        padding: 4px 12px;
+    }
+    .skills-secondary [data-skill="9"] span {
+        width: 90%;
+        background-color: red;
+        padding: 4px 12px;
+    }
+    .skills-secondary [data-skill="5"] span {
+        width: 50%;
+        background-color: red;
+        padding: 4px 12px;
+    }
+    .skills-secondary [data-skill="7"] span {
+        width: 70%;
+        background-color: red;
+        ;
+        padding: 4px 12px;
+    }
+    .skills-primary::before {
+        content: "Main";
+        font-family: sans-serif;
+    }
+    .skills-secondary::before {
+        content: "Other";
+    }
+    
+    .experience-type {
+        color: red;
+    }
+    .experience-institution {
+        color: indianred;
+    }
+    .experience-details {
+        color: grey;
+    }
+    .experience-date-separator {
+        color: red;
+    }
+ 
+    .experience-institution::before {
+        content: "@ ";
+    }
+    .experience-details::before {
+        content: "In ";
+    }
+    .day::before {
+        content: " on ";
+    }
+    .experience h4{
+        margin: 10px 0 1px;
+    }
+    .experience-details{
+        padding-left : 10px;
+    }
+
+     @media (min-width:900px) {
+         hgroup {
+             color: red;
+             font-family: sans-serif;
+             position: absolute;
+             top: 27px;
+             left: 192px;
+         }
+         figure img {
+             position: absolute;
+             top: 27px;
+             left: 450px;
+         }
+         .content {
+             width: 90%;
+             margin: auto;
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+         }
+
+         #contact h3 {
+             display: none;
+         }
+         .contacts {
+             position: absolute;
+             top: 27px;
+             right: 0;
+             left: 50%;
+             background: #000;
+             padding: 1px;
+         }
+         dt {
+             color: white;
+             background-color: red;
+             width: 20%;
+             display: inline-block;
+             text-align: left;
+             margin-left: auto;
+             margin: 0;
+         }
+         dd {
+             display: inline-block;
+             text-align: left;
+             margin-left: auto;
+         }
+         dd a {
+             text-decoration: none;
+             color: red;
+             background-color: black;
+             margin: 1px;
+         }
+         dl dt {
+             padding: 2px 3px;
+         }
+         dl {
+             margin: -1px;
+         }
+         p {
+             padding-right: 20px;
+         }
+     }
+
+     @media (max-width:899px){
+         .content{
+             margin:10px;
+         }
+         hgroup{
+            color: red;
+            font-family: sans-serif;
+         }
+         p{
+             font-family: unsentsans-serif;
+             font-size: 15px;
+         }
+         
+         header{
+            margin-bottom: 19%;
+            
+         }
+         section ul{
+            font-family: serif;
+        }
+        dt {
+            color: white;
+            background-color: red;
+            width: 30%;
+            display: inline-block;
+            text-align: left;
+            margin-left: auto;
+            
+        }
+        dd{
+            display: inline-block;
+            text-align: left;
+            margin-left: auto;
+            margin-right:  29px;
+        
+        }
+        dd a {
+            text-decoration: none;
+            color: red;
+            
+        }
+        dl dt {
+            padding: 5px 7px;
+          }
+          dl {
+              margin: -1px;
+          }
+          
+          section {
+              margin: 10px;
+          }
+          figure  {
+            margin: 0;
+            padding-bottom: 20px;
+          }
+          
+     }
